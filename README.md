@@ -17,7 +17,7 @@ This project allows you to interpret serial commands from a modified Xbox 360 ch
    - Pin 1 on the chatpad to 3.3v on the pico.
    **Important**: Do not wire the chatpad to the pico before flashing! The pico should be turned off during this process, as a serial connection between the two can interfere with flashing.
 
-3. **Program the Pico**: Use the Adafruit CircuitPython .uf2 file included in this project. Then copy the code.py file onto the Raspberry Pi Pico replacing the one that is already there.
+3. **Program the Pico**: Use the Adafruit CircuitPython .uf2 file included in this project. Then copy the lib directory and code.py file onto the Raspberry Pi Pico replacing the one that is already there.
 
 **Note**: Detailed instructions and pictures will be added as soon as possible.
 
