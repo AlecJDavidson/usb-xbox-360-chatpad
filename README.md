@@ -10,14 +10,16 @@ This project allows you to interpret serial commands from a modified Xbox 360 ch
 
 ## Steps
 1. **Flash the chatpad**: Connect the chatpad to the Pickit3 and use it to flash the included hex file onto the chatpad. The stock chatpad hex file dump is also included for reversing changes if needed.
-2. **Connect the chatpad to the Pico**: Wire up the chatpad to the Raspberry Pi Pico as follows:
+   Here's how you connect it to the PICKIT3: <img width="373" height="400" alt="image" src="https://github.com/user-attachments/assets/6d27adab-110d-465c-9f3e-d4a6a3c01fa0" />
+
+3. **Connect the chatpad to the Pico**: Wire up the chatpad to the Raspberry Pi Pico as follows:
    - TX of the chatpad (pin 2) to RX pin on the pico (Pin 0)
    - RX of the chatpad (pin 3) to TX (pin 1) on the pico.
    - Pin 4 on the chatpad to ground on the pico.
    - Pin 1 on the chatpad to 3.3v on the pico.
    **Important**: Do not wire the chatpad to the pico before flashing! The pico should be turned off during this process, as a serial connection between the two can interfere with flashing.
 
-3. **Program the Pico**: Use the Adafruit CircuitPython .uf2 file included in this project. Then copy the lib directory and code.py file onto the Raspberry Pi Pico replacing the one that is already there.
+4. **Program the Pico**: Use the Adafruit CircuitPython .uf2 file included in this project. Then copy the lib directory and code.py file onto the Raspberry Pi Pico replacing the one that is already there.
 
 **Note**: Detailed instructions and pictures will be added as soon as possible.
 
